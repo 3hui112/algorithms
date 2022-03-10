@@ -1,5 +1,5 @@
-x = int(input())
-y = int(input())
+x = float(input())
+y = float(input())
 
 if x > 0 and y > 0:
     quadrant = 1
@@ -8,6 +8,6 @@ elif x > 0 and y < 0:
 elif x < 0 and y >0 :
     quadrant = 2
 elif x <0 and y <0 :
-    quandrant = 3
+    quadrant = 3
     
 print(quadrant)
