@@ -4,3 +4,14 @@
 
 A, B = map(int, input().split())
 C = int(input())
+
+if B+C >= 60:
+    hour = A + ((B+C))//60
+    minute = (B+C)%60
+    if hour > 23:
+        hour = hour % 24
+else:
+    hour = A
+    minute = B+C
+    
+print(hour, minute)
