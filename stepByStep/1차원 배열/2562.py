@@ -1,11 +1,11 @@
 MAX_NUM = 0
-count = -1
+count = 0
 
-while True:
+for i in range(0, 9):
     A = int(input())
     if A > MAX_NUM:
         MAX_NUM = A
-        count = count + 1
+        count = i+1
         
 print(MAX_NUM)
 print(count)
