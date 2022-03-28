@@ -1,16 +1,9 @@
 N, X = map(int, input().split())
-B_List = list()
-A_List = map(int, input().split())
-A_List = list(A_List)
+A_list = list(map(int, input().split()))
+less_than_X = []
 
-for i in range (0, N-1):
-    if A_List[i] < X:
-        B_List.append(A_List[i])
-        
-for j in range(0, len(B_List)):
-    string = ''
-    split_strings = string.split()
-    split_strings.insert(j, B_List[j])
-    String = ' '.join(split_strings)
+for i in range (0, N):
+    if A_list[i] < X:
+        less_than_X.append(A_list[i])
     
-print(String)
+print(' '.join(str(x) for x in less_than_X))
