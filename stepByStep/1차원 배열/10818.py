@@ -1,13 +1,12 @@
 N = int(input())
-list = [input().split()]
-Max_Num = 0
-Min_Num = 0
+list = list(map(int, input().split()))
+max_Num = list[0]
+min_Num = list[0]
 
 for i in range (0, N):
-    if int(list[i])>Max_Num:
+    if int(list[i])>max_Num:
         max_Num = list[i]
-    elif int(list[i])<Min_Num:
+    elif int(list[i])<min_Num:
         min_Num = list[i]
 
 print(min_Num, max_Num)
-
